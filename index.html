@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musify : Enjoy the moment</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/My project (3).png" type="image/x-icon">
 </head>
 <body class="">
     <nav  id="home" class="relative flex justify-center h-20 bg-gray-50 text-gray-800 items-center space-x-6 w-full">
@@ -32,7 +33,7 @@
                         <span class="text-lg font-semibold">Let me love you</span>
                         <span id="songlistplay" class="flex space-x-2 items-center">
                             <span class="text-gray-700 font-bold">05:34</span>
-                            <img class="cursor-pointer h-6" src="./img/play-circle.svg" alt="">
+                            <span class="h-6"><i class="fa-regular fa-circle-play"></i></span>
                         </span>
                     </div>
                     <div id="songItem" class="flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
@@ -41,7 +42,7 @@
                         <span class="text-lg font-semibold">Let me love you</span>
                         <span id="songlistplay" class="flex space-x-2 items-center">
                             <span class="text-gray-700 font-bold">05:34</span>
-                            <img class="cursor-pointer h-6" src="./img/play-circle.svg" alt="">
+                            <span class="h-6"><i class="fa-regular fa-circle-play"></i></span>
                         </span>
                     </div>
                     <div id="songItem" class="flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
@@ -50,7 +51,7 @@
                         <span class="text-lg font-semibold">Let me love you</span>
                         <span id="songlistplay" class="flex space-x-2 items-center">
                             <span class="text-gray-700 font-bold">05:34</span>
-                            <img class="cursor-pointer h-6" src="./img/play-circle.svg" alt="">
+                            <span class="h-6"><i class="fa-regular fa-circle-play"></i></span>
                         </span>
                     </div>
                     <div id="songItem" class="flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
@@ -59,7 +60,7 @@
                         <span class="text-lg font-semibold">Let me love you</span>
                         <span id="songlistplay" class="flex space-x-2 items-center">
                             <span class="text-gray-700 font-bold">05:34</span>
-                            <img class="cursor-pointer h-6" src="./img/play-circle.svg" alt="">
+                            <span class="h-6"><i class="fa-regular fa-circle-play"></i></span>
                         </span>
                     </div>
                     <div id="songItem" class="flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
@@ -68,7 +69,7 @@
                         <span class="text-lg font-semibold">Let me love you</span>
                         <span id="songlistplay" class="flex space-x-2 items-center">
                             <span class="text-gray-700 font-bold">05:34</span>
-                            <img class="cursor-pointer h-6" src="./img/play-circle.svg" alt="">
+                            <span class="h-6"><i class="fa-regular fa-circle-play"></i></span>
                         </span>
                     </div>
 
@@ -79,13 +80,13 @@
 
         <div id="bottom" class="bg-gray-50 space-y-2 w-full h-[16vh] md:h-[12vh] flex flex-col justify-center items-center absolute bottom-0">
             <!-- icons -->
-            <div class=" flex space-x-4">
+            <div class=" flex space-x-4 items-center">
                 <img class="cursor-pointer h-8  " src="./img/backward.svg" alt="">
-                <img class="cursor-pointer h-8  " src="./img/play-circle.svg" alt="">
+                <span class="cursor-pointer"><i id="masterPlay" class="fa-xl fa-solid fa-circle-play"></i></span>
                 <img class="cursor-pointer h-8  " src="./img/forward.svg" alt="">
             </div>
             <!-- progressbar -->
-            <input type="range" name="range" id="progressBar" class="w-[40%]" min="0" max="100">
+            <input type="range" name="range" id="progressBar" class="cursor-pointer w-[40%]" value="0" min="0" max="100">
             <!-- bottom song name -->
             <div class="flex md:absolute lg:left-36 lg:top-4">
                 <img class="h-6" src="./img/My project (3).png" alt="">
