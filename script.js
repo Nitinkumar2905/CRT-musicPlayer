@@ -52,8 +52,19 @@ progressBar.addEventListener('change', ()=>{
 
 const makeAllPlays = () =>{
     Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
-        element.classList.remove('fa-circle-pause');
-        element.classList.add('fa-circle-play');
+        element.addEventListener('click', ()=>{
+            if(audioElement.paused || audioElement.currentTime<=0){
+                // audioElement.play();
+                element.classList.add('fa-circle-play');
+                element.classList.remove('fa-circle-pause');
+            }
+            else{
+                // audioElement.pause();
+                element.classList.remove('fa-circle-play');
+                element.classList.add('fa-circle-pause');
+
+            }
+        })
     })
 }
 
@@ -66,7 +77,12 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         audioElement.src = `songs/${songIndex+1}.mp3`;
         masterSongName.innerText = musicList[songIndex].songName;
         audioElement.currentTime = 0;
-        audioElement.play();
+        if(audioElement.paused || audioElement.currentTime<=0){
+            audioElement.play();
+        }
+        else{
+            audioElement.pause();
+        }
         masterPlay.classList.add('fa-circle-pause');
         masterPlay.classList.remove('fa-circle-play');
     })
