@@ -9,9 +9,9 @@ let progressBar = document.getElementById('progressBar');
 
 let musicList = [
     {songName: "i love you", filepath:"songs/1.mp3", duration:"4:50"},
-    {songName: "Selena-Gomez-Look-At-Her-Now-Official-Instrumental", filepath:"songs/2.mp3", duration:"3:50"},
-    {songName: "Jhené-Aiko-None-Of-Your-Concern-Instrumental", filepath:"songs/3.mp3", duration:"6:50"},
-    {songName: "Miley-Cyrus-Mothers-Daughter-Ringtone-instrumental", filepath:"songs/4.mp3", duration:"7:50"},
+    {songName: "Selena-Gomez-Look-At-Her-Now", filepath:"songs/2.mp3", duration:"3:50"},
+    {songName: "Jhené-Aiko-None-Of-Your", filepath:"songs/3.mp3",  duration:"6:50"},
+    {songName: "Mothers-Daughter-Ringtone-instrumental", filepath:"songs/4.mp3", duration:"7:50"},
     {songName: "Lana-Del-Rey-Love-Official-Instrumental", filepath:"songs/5.mp3", duration:"2:50"}
 ]
 
