@@ -1,100 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Musify : Enjoy the moment</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./img/My project (3).png" type="image/x-icon">
-</head>
-<body class="">
-    <nav  id="home" class="relative flex justify-center h-20 bg-gray-50 text-gray-800 items-center space-x-6 w-full">
-        <div class="absolute left-0 top-2 flex items-center space-x-1 text-2xl font-semibold">
-            <img class=" top-2 my-2 h-12 rounded-full" src="./img/My project (3).png" alt="">
-            <span>Musify</span>
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/My project (3).png"
+      type="image/x-icon"
+    />
+  </head>
 
-        <ul class="absolute right-10 flex items-center space-x-6 text-xl">
-            <li class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300">Home</li>
-            <li class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300">About</li>
-            <li class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300">Download</li>
-        </ul>
+  <body class="">
+    <nav
+      id="home"
+      class="relative flex justify-center h-20 bg-gray-50 text-gray-800 items-center space-x-6 w-full"
+    >
+      <div
+        class="absolute left-0 top-2 flex items-center space-x-1 text-2xl font-semibold"
+      >
+        <img
+          class="top-2 my-2 h-12 rounded-full"
+          src="./img/My project (3).png"
+          alt=""
+        />
+        <span>Musify</span>
+      </div>
+
+      <ul class="absolute right-10 flex items-center space-x-6 text-xl">
+        <li
+          class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300"
+        >
+          Home
+        </li>
+        <li
+          class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300"
+        >
+          About
+        </li>
+        <!-- <li class="text-gray-800 hover:text-sky-500 font-semibold cursor-pointer duration-300">Download</li> -->
+      </ul>
     </nav>
 
     <section class="relative h-[89.4vh] flex flex-col items-center w-full">
-        <div id="container" class="flex justify-center bg-gray-50 p-2 lg:p-4  h-[73vh] w-[95%] lg:w-[80%] space-x-3 my-4">
-            <div id="songList" class="w-full lg:w-[95%] border-0 space-y-3">
-                <h1 class="font-semibold text-4xl font-serif text-gray-600">Melody : Live the moment</h1>
-                <div class="space-y-1">
-                    <div class="relative songItem flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
-                        <span>1</span>
-                        <img src="./img/My project (3).png" class="h-6" alt="1">
-                        <span class="songName text-lg font-semibold">Let me love you</span>
-                        <span id="songlistplay" class="absolute right-4 flex space-x-2 items-center">
-                            <span class="songDuration text-gray-700 font-bold">05:34</span>
-                            <span class="h-6"><i id="0" class="cursor-pointer songItemPlay fa-regular fa-circle-play"></i></span>
-                        </span>
-                    </div>
-                    <div class="relative songItem flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
-                        <span>2</span>
-                        <img src="./img/My project (3).png" class="h-6" alt="1">
-                        <span class="songName text-lg font-semibold">Let me love you</span>
-                        <span id="songlistplay" class="absolute right-4 flex space-x-2 items-center">
-                            <span class="songDuration text-gray-700 font-bold">05:34</span>
-                            <span class="h-6"><i id="1" class="cursor-pointer songItemPlay fa-regular fa-circle-play"></i></span>
-                        </span>
-                    </div>
-                    <div class="relative songItem flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
-                        <span>3</span>
-                        <img src="./img/My project (3).png" class="h-6" alt="1">
-                        <span class="songName text-lg font-semibold">Let me love you</span>
-                        <span id="songlistplay" class="absolute right-4 flex space-x-2 items-center">
-                            <span class="songDuration text-gray-700 font-bold">05:34</span>
-                            <span class="h-6"><i id="2" class="cursor-pointer songItemPlay fa-regular fa-circle-play"></i></span>
-                        </span>
-                    </div>
-                    <div class="relative songItem flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
-                        <span>4</span>
-                        <img src="./img/My project (3).png" class="h-6" alt="1">
-                        <span class="songName text-lg font-semibold">Let me love you</span>
-                        <span id="songlistplay" class="absolute right-4 flex space-x-2 items-center">
-                            <span class="songDuration text-gray-700 font-bold">05:34</span>
-                            <span class="h-6"><i id="3" class="cursor-pointer songItemPlay fa-regular fa-circle-play"></i></span>
-                        </span>
-                    </div>
-                    <div class="relative songItem flex items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4">
-                        <span>5</span>
-                        <img src="./img/My project (3).png" class="h-6" alt="1">
-                        <span class="songName text-lg font-semibold">let me love you</span>
-                        <span id="songlistplay" class="absolute right-4 flex space-x-2 items-center">
-                            <span class="songDuration text-gray-700 font-bold">05:34</span>
-                            <span class="h-6"><i id="4" class="cursor-pointer songItemPlay fa-regular fa-circle-play"></i></span>
-                        </span>
-                    </div>
+      <div
+        id="container"
+        class="flex justify-center bg-gray-50 p-2 lg:p-4 h-[73vh] w-[95%] lg:w-[80%] space-x-3 my-4"
+      >
+        <div id="songList" class="w-full lg:w-[95%] border-0 space-y-3">
+          <h1 class="font-semibold text-4xl font-serif text-gray-600">
+            Melody : Live the moment
+          </h1>
+          <div class="space-y-1">
+            <div
+              class="relative songItem flex currentSongItem items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 visited:bg-slate-600 px-2 duration-300 rounded-md space-x-4"
+            >
+              <span>1</span>
+              <img src="./img/My project (3).png" class="h-6" alt="1" />
+              <span class="songName text-lg font-semibold"
+                >Let me love you</span
+              >
+              <span
+                id="songlistplay"
+                class="absolute right-4 flex space-x-2 items-center"
+              >
+                <span class="songDuration text-gray-700 font-bold">05:34</span>
+                <span class="h-6"
+                  ><i
+                    id="0"
+                    class="cursor-pointer songItemPlay fa-regular fa-circle-play"
+                  ></i
+                ></span>
+              </span>
+            </div>
 
-                </div>
+            <div
+              class="relative songItem flex currentSongItem items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4"
+            >
+              <span>2</span>
+              <img src="./img/My project (3).png" class="h-6" alt="1" />
+              <span class="songName text-lg font-semibold"
+                >Let me love you</span
+              >
+              <span
+                id="songlistplay"
+                class="absolute right-4 flex space-x-2 items-center"
+              >
+                <span class="songDuration text-gray-700 font-bold">05:34</span>
+                <span class="h-6"
+                  ><i
+                    id="1"
+                    class="cursor-pointer songItemPlay fa-regular fa-circle-play"
+                  ></i
+                ></span>
+              </span>
             </div>
-            <!-- <div id="songBanner" class="w-[95%] border-0"></div> -->
+            <div
+              class="relative songItem flex currentSongItem items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4"
+            >
+              <span>3</span>
+              <img src="./img/My project (3).png" class="h-6" alt="1" />
+              <span class="songName text-lg font-semibold"
+                >Let me love you</span
+              >
+              <span
+                id="songlistplay"
+                class="absolute right-4 flex space-x-2 items-center"
+              >
+                <span class="songDuration text-gray-700 font-bold">05:34</span>
+                <span class="h-6"
+                  ><i
+                    id="2"
+                    class="cursor-pointer songItemPlay fa-regular fa-circle-play"
+                  ></i
+                ></span>
+              </span>
+            </div>
+            <div
+              class="relative songItem flex currentSongItem items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4"
+            >
+              <span>4</span>
+              <img src="./img/My project (3).png" class="h-6" alt="1" />
+              <span class="songName text-lg font-semibold"
+                >Let me love you</span
+              >
+              <span
+                id="songlistplay"
+                class="absolute right-4 flex space-x-2 items-center"
+              >
+                <span class="songDuration text-gray-700 font-bold">05:34</span>
+                <span class="h-6"
+                  ><i
+                    id="3"
+                    class="cursor-pointer songItemPlay fa-regular fa-circle-play"
+                  ></i
+                ></span>
+              </span>
+            </div>
+            <div
+              class="relative songItem flex currentSongItem items-center h-12 border-0 bg-gray-100 hover:bg-gray-200 px-2 duration-300 rounded-md space-x-4"
+            >
+              <span>5</span>
+              <img src="./img/My project (3).png" class="h-6" alt="1" />
+              <span class="songName text-lg font-semibold"
+                >let me love you</span
+              >
+              <span
+                id="songlistplay"
+                class="absolute right-4 flex space-x-2 items-center"
+              >
+                <span class="songDuration text-gray-700 font-bold">05:34</span>
+                <span class="h-6"
+                  ><i
+                    id="4"
+                    class="cursor-pointer songItemPlay fa-regular fa-circle-play"
+                  ></i
+                ></span>
+              </span>
+            </div>
+          </div>
         </div>
+        <!-- <div id="songBanner" class="w-[95%] border-0"></div> -->
+      </div>
 
-        <div id="bottom" class="bg-gray-5absolute right-4 0 space-y-2 w-full h-[16vh] md:h-[12vh] flex flex-col justify-center items-center absolute bottom-0">
-            <!-- icons -->
-            <div class=" flex space-x-4 items-center">
-                <span class="cursor-pointer"><i id="previous" class="fa-solid fa-backward-step fa-xl"></i></span>
-                <span class="cursor-pointer"><i id="masterPlay" class="fa-xl fa-solid fa-circle-play"></i></span>
-                <span class="cursor-pointer"><i id="next" class="fa-solid fa-forward-step fa-xl"></i></span>
-            </div>
-            <!-- progressbar -->
-            <input type="range" name="range" id="progressBar" class="cursor-pointer w-[40%]" value="0" min="0" max="100">
-            <!-- bottom song name -->
-            <div class="flex md:absolute lg:left-36 lg:top-4">
-                <img class="h-6" src="./img/My project (3).png" alt="">
-                <span id="masterSongName" class="pr-4">i love you</span>
-            </div>
+      <div
+        id="bottom"
+        class="bg-gray-5absolute right-4 0 space-y-2 w-full h-[16vh] md:h-[12vh] flex flex-col justify-center items-center absolute bottom-0"
+      >
+        <!-- icons -->
+        <div class="flex space-x-4 items-center">
+          <span class="cursor-pointer"
+            ><i id="previous" class="fa-solid fa-backward-step fa-xl"></i
+          ></span>
+          <span class="cursor-pointer"
+            ><i id="masterPlay" class="fa-xl fa-solid fa-circle-play"></i
+          ></span>
+          <span class="cursor-pointer"
+            ><i id="next" class="fa-solid fa-forward-step fa-xl"></i
+          ></span>
         </div>
+        <!-- progressbar -->
+        <input
+          type="range"
+          name="range"
+          id="progressBar"
+          class="cursor-pointer w-[40%]"
+          value="0"
+          min="0"
+          max="100"
+        />
+        <!-- bottom song name -->
+        <div class="flex md:absolute lg:left-36 lg:top-4">
+          <img class="h-6" src="./img/My project (3).png" alt="" />
+          <span id="masterSongName" class="pr-4">i love you</span>
+        </div>
+      </div>
     </section>
-    <script src="https://kit.fontawesome.com/881b20e4c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/881b20e4c2.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="./script.js"></script>
-</body>
+  </body>
 </html>
